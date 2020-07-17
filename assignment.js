@@ -44,7 +44,7 @@ var totalbBricksperFeet = brickCalculator(27);
 console.log(totalbBricksperFeet);
 
 //get smallest letter from an array
-function minCharacter (letters) {
+function tinyFriend (letters) {
     var smallest = letters[0];
     for(var i = 1; i < letters.length; i++){
         var currentLetter = letters[i];
@@ -54,5 +54,5 @@ function minCharacter (letters) {
     }
     return smallest;
 }
-var smallestCharacter = minCharacter(["L", "Lotus", "Raidah", "Li"]);
+var smallestCharacter = tinyFriend(["L", "Lotus", "Raidah", "Li"]);
 console.log(smallestCharacter);
