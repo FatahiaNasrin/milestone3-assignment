@@ -33,26 +33,26 @@ function brickCalculator(numberOfFloor){
         numberOfBricks =  (firstTenFloor * 15 * 1000)+  ((numberOfFloor-10)*12*1000) ;
     }
     else if (numberOfFloor>0){
-        numberOfBricks = (numberOfFloor * 10 * 1000);
+        numberOfBricks = (numberOfFloor * 15 * 1000);
     }
     else {   
         console.log("Number of floor must be greater than zero");
     }
     return numberOfBricks;
 }
-var totalbBricksperFeet = brickCalculator(27);
+var totalbBricksperFeet = brickCalculator(10);
 console.log(totalbBricksperFeet);
 
 //get smallest letter from an array
 function tinyFriend (letters) {
     var smallest = letters[0];
-    for(var i = 1; i < letters.length; i++){
+    for(var i = 0; i < letters.length; i++){
         var currentLetter = letters[i];
-        if(currentLetter<smallest){
+        if(currentLetter.length<smallest.length){
             smallest = currentLetter;
         }
     }
     return smallest;
 }
-var smallestCharacter = tinyFriend(["L", "Lotus", "Raidah", "Li"]);
+var smallestCharacter = tinyFriend(["Rupa", "Tushari", "Raidah", "Roy"]);
 console.log(smallestCharacter);
